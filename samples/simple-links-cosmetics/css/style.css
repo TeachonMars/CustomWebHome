@@ -1,0 +1,66 @@
+
+@font-face {
+    font-family: 'signpainter_housescriptRg';
+    src: url('signpainter_housescript_regular-webfont.woff2') format('woff2'),
+         url('signpainter_housescript_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    height: 100%;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+body {
+    background-image: url('../img/background.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 99%;
+    min-height: 800px;
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+    background-color: #bf045d;
+    /*position: absolute;*/
+    margin: 50px 0;
+    left: 0;
+    width: 60%;
+    color: white;
+    padding: 5px 60px 0px 60px;
+    font-size: 60px;
+    font-family: "signpainter_housescriptRg";
+    font-weight: normal;
+}
+
+ul.links {
+    list-style-type: none;
+    width: 230px;
+    padding: 0;
+}
+
+ul.links li {
+    display: inline-block;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    margin: 10px 0;
+    color: #bf045d;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+
+ul.links li svg {
+    height: 24px;
+    position: relative;
+    top: 6px;
+    margin-right: 10px;
+}

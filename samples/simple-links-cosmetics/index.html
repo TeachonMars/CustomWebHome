@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<h1 class="">Cosmetics</h1>
+
+<ul class="links">
+    <li id="link-wall">
+        <svg class="svg-icon" viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image xlink:href="img/wall.svg" x="0" y="0" height="100" width="100" />
+        </svg>
+        Wall
+    </li>
+    <li id="link-catalog">
+
+        <svg class="svg-icon" viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image xlink:href="img/trainings.svg" x="0" y="0" height="100" width="100" />
+        </svg>
+        Training courses
+    </li>
+    <li id="link-search">
+
+        <svg class="svg-icon" viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image xlink:href="img/search.svg" x="0" y="0" height="100" width="100" />
+        </svg>
+        Search
+    </li>
+    <li id="link-profile">
+
+        <svg class="svg-icon" viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image xlink:href="img/profile.svg" x="0" y="0" height="100" width="100" />
+        </svg>
+        Profile
+    </li>
+    <li id="link-apps">
+
+        <svg class="svg-icon" viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image xlink:href="img/apps.svg" x="0" y="0" height="100" width="100" />
+        </svg>
+        Apps
+    </li>
+</ul>
+<script type="text/javascript">
+    $(document).ready(function() {
+        window.ToM = window.ToM || (window.top && window.top.ToM) || {};
+
+        resizeFrame();
+
+        $("#link-wall").click(ToM.navigation.displayWall);
+        $("#link-catalog").click(ToM.navigation.displayCatalog);
+        $("#link-search").click(ToM.navigation.displaySearch);
+        $("#link-profile").click(ToM.navigation.displayProfile);
+        $("#link-apps").click(ToM.navigation.displayApps);
+
+
+    });
+
+    function resizeFrame() {
+        if (window.top && window.top.SetIframeSize) {
+            $("body").css({"min-height": window.top.innerHeight-10});
+            window.top.SetIframeSize();
+        }
+    }
+
+</script>
+</body>
+</html>

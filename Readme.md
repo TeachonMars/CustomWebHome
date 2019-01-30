@@ -15,7 +15,7 @@ You will find more detailed information in the [Custom web home documentation](h
 * Your favorite web IDE
 
 ### Step by step
-1. Clone this repository in a directory on your web server
+1. Clone this repository in a directory on your local web server
 2. Have the _simulator_ directory accessible through a URL on your local server (it must be under the same domain to avoid cross-domain issues)
 3. Open the _simulator_ URL you've just set up in your favorite web browser
 4. Fill the URL in the header with the URL you're using to test your development
