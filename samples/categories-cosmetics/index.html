@@ -62,7 +62,9 @@
 
             $("#link-wall").click(ToM.navigation.displayWall);
             $("#link-catalog").click(ToM.navigation.displayCatalog);
-            // $("#link-search").click(ToM.navigation.displaySearch);
+            $("#link-search svg").click(function() {
+                $("#search-form").submit();
+            });
             $("#link-profile").click(ToM.navigation.displayProfile);
             $("#link-apps").click(ToM.navigation.displayApps);
 

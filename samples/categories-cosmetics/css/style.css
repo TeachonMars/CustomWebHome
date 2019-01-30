@@ -28,18 +28,21 @@ body {
     margin: 0;
 }
 
-
 .header-container {
     background-color: #bf045d;
     position: relative;
     margin: 0 0 50px 0;
     left: 0;
-    width: 60%;
     color: white;
-    padding: 10px 60px 5px 60px;
+    padding: 0;
     font-size: 60px;
     font-family: "signpainter_housescriptRg";
     font-weight: normal;
+    width: 100%;
+}
+
+.header-container > span {
+    padding: 10px 0px 5px 60px;
 }
 
 ul.links {
@@ -51,7 +54,7 @@ ul.links {
     right: 0;
     text-align: right;
     top: 0;
-    margin: 0 20px;
+    margin: -5px 20px 0 20px;
 }
 
 ul.links input {

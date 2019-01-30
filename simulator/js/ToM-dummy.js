@@ -212,7 +212,7 @@ window.categories = [
     },
     {
         "id": "category-2",
-        "title": "Anti-ageing plants",
+        "title": "Sun protection",
         "children": [],
         "parent": null,
         "image": {
