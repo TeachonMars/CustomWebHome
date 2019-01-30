@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Custom Home Test Environment</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lodash/core.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="">
+    <form class="form-inline" style="background-color: #f5f5f5;border-bottom: 1px solid gray;">
+        <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">Home URL</div>
+            </div>
+            <input class="form-control" type="text" id="content-url-input" size="60" />
+        </div>
+        <input class="btn btn-primary mb-2" id="load-btn" type="submit" value="Load" />&nbsp;
+        <input class="btn btn-primary mb-2" id="close-link" type="button" value="Close" />&nbsp;
+        <input class="btn btn-primary mb-2" id="relaunch-link" type="button" value="Relaunch" />&nbsp;
+    </form>
+    <div style="font-style:italic;" id="content-url"></div>
+    <iframe
+        src=""
+        width="100%" height="500px" border="0" id="homeIframe"></iframe>
+
+    </div>
+<script type="text/javascript">
+    var contentUrl = "/test-package/_contents/HomeClarins/";
+    $("#content-url-input").val(contentUrl);
+    loadContent();
+    $('form').submit(function(e) {
+        e.preventDefault();
+        loadContent();
+    });
+
+    function loadContent() {
+        var src = $("#content-url-input").val();
+        $("#homeIframe").attr("src", src);
+    }
+
+    function closeContent() {
+        $("#homeIframe").attr("src", null);
+    }
+
+    $('#close-link').click(closeContent);
+    $('#load-btn').click(loadContent);
+
+    $('#relaunch-link').click(function() {
+        closeContent();
+        loadContent();
+    });
+
+    function SetIframeSize() {
+        var iframe = document.getElementById("homeIframe");
+        iframe.height = iframe.contentWindow.document.body.scrollHeight + 10 + 'px';
+    }
+
+
+
+</script>
+<style type="text/css">
+    body {
+        margin:0;
+    }
+    iframe {
+        border:0;
+    }
+</style>
+
+    <script type="text/javascript" src="js/ToM-dummy.js"></script>
+    <script type="text/javascript" src="js/ToM-interface.js"></script>
+    <script type="text/javascript" src="js/ToM.min.js"></script>
+</body>
+</html>
