@@ -1,0 +1,124 @@
+svg .cls-1 {
+    fill: #ffffff;
+}
+
+
+@font-face {
+    font-family: 'signpainter_housescriptRg';
+    src: url('signpainter_housescript_regular-webfont.woff2') format('woff2'),
+         url('signpainter_housescript_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    height: 100%;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+body {
+    background-image: url('../img/background.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 99%;
+    min-height: 800px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.header-container {
+    background-color: #bf045d;
+    position: relative;
+    margin: 0 0 50px 0;
+    left: 0;
+    width: 60%;
+    color: white;
+    padding: 10px 60px 5px 60px;
+    font-size: 60px;
+    font-family: "signpainter_housescriptRg";
+    font-weight: normal;
+}
+
+ul.links {
+    display: inline;
+    list-style-type: none;
+    width: 600px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    margin: 0 20px;
+}
+
+ul.links input {
+    border: 0;
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
+ul.links li {
+    display: inline-block;
+    /* padding: 10px; */
+    /* padding-left: 20px; */
+    /* padding-bottom: 15px; */
+    /* padding-right: 20px; */
+    /* margin: 10px 0; */
+    color: #bf045d;
+    text-transform: uppercase;
+    /* background: rgba(255, 255, 255, 0.5); */
+    cursor: pointer;
+    font-size: 12px;
+    font-family: Roboto;
+    color: white;
+}
+
+ul.links li svg {
+    height: 24px;
+    position: relative;
+    top: 6px;
+    margin-right: 10px;
+}
+
+#link-search {
+    background: white;
+}
+
+#categories-container {
+    width: 400px;
+}
+
+.category {
+    cursor: pointer;
+    height: 150px;
+    margin: 20px;
+    position: relative;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.category-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #bf045d;
+}

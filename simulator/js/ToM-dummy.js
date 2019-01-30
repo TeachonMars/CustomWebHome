@@ -193,7 +193,7 @@ window.featuredCommunications = _.filter(window.communications, function(c) { re
 window.categories = [
     {
         "id": "category-1",
-        "title": "Solar system",
+        "title": "Skin care products",
         "children": [
             {
                 "id": "category-1-2",
@@ -212,7 +212,7 @@ window.categories = [
     },
     {
         "id": "category-2",
-        "title": "Our team",
+        "title": "Anti-ageing plants",
         "children": [],
         "parent": null,
         "image": {
