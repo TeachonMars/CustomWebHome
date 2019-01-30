@@ -16,7 +16,7 @@ window.trainingCourses = [
   {
     "accessible": true,
     "categories": [
-      "category-1"
+      "category-2"
     ],
     "certified": false,
     "completed": false,
@@ -31,7 +31,7 @@ window.trainingCourses = [
     "thumbnail": {
       "url": null
     },
-    "title": "Colonizing Mars",
+    "title": "Green banana",
     "updateAvailable": false
   },
   {
@@ -52,13 +52,13 @@ window.trainingCourses = [
     "thumbnail": {
       "url": null
     },
-    "title": "Exploring Jupiter",
+    "title": "Plant-based creams",
     "updateAvailable": false
   },
   {
     "accessible": true,
     "categories": [
-      "category-2"
+      "category-1"
     ],
     "certified": false,
     "completed": false,
@@ -73,7 +73,7 @@ window.trainingCourses = [
     "thumbnail": {
       "url": null
     },
-    "title": "The work of engineers",
+    "title": "Anti-ageing creams",
     "updateAvailable": false
   }
 ];
@@ -98,7 +98,7 @@ window.communications = [
         "type": "article",
         "id": "communication-1",
         "featured": true,
-        "title": "Discover our brand new gas giant",
+        "title": "Discover our latest technology",
         "featuredImage": {
             "url": window.baseEnvUrl+"/assets/communications/communication-1-750x545.jpg",
             "imageSize": {
@@ -113,7 +113,7 @@ window.communications = [
         "type": "article",
         "id": "communication-2",
         "featured": true,
-        "title": "This is Mars, Earth's red little sister",
+        "title": "Get ready for the game!",
         "featuredImage": {
             "url": window.baseEnvUrl+"/assets/communications/communication-2-750x545.jpg",
             "imageSize": {
@@ -125,10 +125,10 @@ window.communications = [
     },
 
     {
-        "type": "image",
+        "type": "training",
         "id": "communication-3",
         "featured": true,
-        "title": "Our team is working hard",
+        "title": "Green banana",
         "featuredImage": {
             "url": window.baseEnvUrl+"/assets/communications/communication-3-750x545.jpg",
             "imageSize": {
@@ -136,6 +136,7 @@ window.communications = [
                 "width": 545
             }
         },
+        "trainingId": "training-course-1",
         "description": "Officia labore ea ex et veniam nostrud ut ut magna consectetur.",
     },
 
@@ -145,9 +146,9 @@ window.communications = [
         "type": "article",
         "id": "communication-4",
         "featured": false,
-        "title": "Discover our brand new gas giant",
+        "title": "Essence oils",
         "image": {
-            "url": window.baseEnvUrl+"/assets/communications/communication-1-750x545.jpg",
+            "url": window.baseEnvUrl+"/assets/communications/communication-4-750x270.jpg",
             "imageSize": {
                 "height": 720,
                 "width": 545
@@ -160,9 +161,9 @@ window.communications = [
         "type": "article",
         "id": "communication-5",
         "featured": false,
-        "title": "This is Mars, Earth's red little sister",
+        "title": "Discover the power of plants",
         "image": {
-            "url": window.baseEnvUrl+"/assets/communications/communication-2-750x545.jpg",
+            "url": window.baseEnvUrl+"/assets/communications/communication-5-750x270.jpg",
             "imageSize": {
                 "height": 720,
                 "width": 545
@@ -175,9 +176,9 @@ window.communications = [
         "type": "image",
         "id": "communication-6",
         "featured": false,
-        "title": "Our team is working hard",
+        "title": "Scent and colors",
         "image": {
-            "url": window.baseEnvUrl+"/assets/communications/communication-3-750x545.jpg",
+            "url": window.baseEnvUrl+"/assets/communications/communication-6-750x545.jpg",
             "imageSize": {
                 "height": 720,
                 "width": 545
@@ -193,11 +194,11 @@ window.featuredCommunications = _.filter(window.communications, function(c) { re
 window.categories = [
     {
         "id": "category-1",
-        "title": "Skin care products",
+        "title": "Skin care",
         "children": [
             {
                 "id": "category-1-2",
-                "title": "Planets",
+                "title": "The power of plants",
                 "children": [],
                 "parent": null,
                 "image": {
