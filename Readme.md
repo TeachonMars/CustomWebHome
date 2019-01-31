@@ -40,7 +40,7 @@ then the URL to access the simulator should be
 
 ![The home web home simulator interface](https://raw.githubusercontent.com/TeachonMars/CustomWebHome/master/doc/simulator-1.png "The home web home simulator interface")
 
-**Legend**
+**Caption**
 1. URL input: this is where you can enter an URL where the built version of your project can be viewed.
 2. Bar toggle link that allows you to hide and show the bar
 
