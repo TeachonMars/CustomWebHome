@@ -1,14 +1,18 @@
 window.baseEnvUrl = window.location.pathname;
 
 window.learnerProfile = {
-    "learnerId": "AAAAA",
-    "firstname": "Jenny",
-    "lastname": "Smith",
+    "id": "5205dda0-db62-11e7-a799-25541a29a5fd",
+    "firstname": "John",
+    "lastname": "Doe",
+    "title": "Project manager",
+    "lang": "en",
     "avatar": {
         "url": window.baseEnvUrl+"/assets/learner/profile.png"
     },
-    "lang": "en",
-    "points": 1458
+    "completedTrainingsCount": 3,
+    "points": 1457,
+    "badgesCount": 3,
+    "time": 349
 };
 
 
@@ -106,7 +110,7 @@ window.communications = [
                 "width": 545
             }
         },
-        "description": null,
+        "description": "Ut nostrud laboris ex id deserunt duis in veniam do velit excepteur ea esse aliqua ut exercitation consectetur deserunt tempor sunt ullamco labore laborum",
     },
 
     {
@@ -121,7 +125,7 @@ window.communications = [
                 "width": 545
             }
         },
-        "description": null,
+        "description": "Ut nostrud laboris ex id deserunt duis in veniam do velit excepteur ea esse aliqua.",
     },
 
     {
@@ -140,13 +144,14 @@ window.communications = [
         "description": "Officia labore ea ex et veniam nostrud ut ut magna consectetur.",
     },
 
-
-
     {
         "type": "article",
         "id": "communication-4",
         "featured": false,
         "title": "Essence oils",
+        "featuredImage": {
+            "url": null
+        },
         "image": {
             "url": window.baseEnvUrl+"/assets/communications/communication-4-750x270.jpg",
             "imageSize": {
@@ -154,7 +159,7 @@ window.communications = [
                 "width": 545
             }
         },
-        "description": null,
+        "description": "Ut nostrud laboris ex id deserunt duis in veniam do velit excepteur.",
     },
 
     {
@@ -169,7 +174,7 @@ window.communications = [
                 "width": 545
             }
         },
-        "description": null,
+        "description": "Officia labore ea ex et veniam nostrud ut ut magna consectetur.",
     },
 
     {
@@ -200,7 +205,7 @@ window.categories = [
                 "id": "category-1-2",
                 "title": "The power of plants",
                 "children": [],
-                "parent": null,
+                "parent": "category-1",
                 "image": {
                     "url": window.baseEnvUrl+"/assets/categories/category-1-2-750x270.jpg"
                 }
