@@ -95,7 +95,7 @@
         }
 
         function loadCategories() {
-            ToM.appContent.getCatfegories().then(function(categories) {
+            ToM.appContent.getCategories().then(function(categories) {
                 for(c in categories) {
                     displayCategory(categories[c]);
                 }

@@ -52,7 +52,35 @@ Currently available examples:
 * Simple links to main screens: `../simple-links-cosmetics/`
 * Root categories: `../categories-cosmetics/`
 
+### What will I gain from using the simulator
 
+The custom home you are developing will need to interact to some degree with the application. To do so, the custom home will include calls to Javascript functions that the application provides. But to embed the custom home in the application, the Teach on Mars product team has to build a new version of the application.
+
+Any developer would need to be able to test his work against some data and some Javascript API. This is what the simulator provides in the form of:
+* Dummy data to test the design implementation
+* Validation of Javascript calls to test the functional implementation
+
+#### Test the design
+
+Any call to a `ToM.appContent.*` method will provide dummy data you can use to populate the screen. All the content provided by the simulator is consistent with what the application will eventually provide in terms of size and data type.
+* Images have the right ratio and size
+* The data is structured in JSON with the same keys as in the application
+* The types of each data is consistent with what will be provided to the home once in the application
+
+#### Test the navigation
+
+Any call to a `ToM.navigation.*` method will will validated by the simulator through an alert popup that will describe the action triggered by this call.
+
+#### Check for errors
+
+Any call to an undefined method in the JS API will result in an error that can be monitored in any web browser inspector.
+
+### Customizing the dummy data
+
+The default dummy data provided by the simulator is based on a a dummy client called Cosmetics and include texts and images that are related to the cosmetic industry. But it is possible to change the dummy assets, here's how:
+
+* To change the texts of the training courses, categories, profile and communications, open the file `simulator/js/ToM-dummy.js` and replace the texts that your wish to change.
+* To change the images provided by the simulator for training courses, categories, profile and communications, just replace the images in `simulator/assets/` (be careful not to change the ratio and size of the images).
 
 
 
