@@ -95,8 +95,7 @@
         }
 
         function loadCategories() {
-            ToM.appContent.getCategories().then(function(categories) {
-                console.log(categories);
+            ToM.appContent.getCatfegories().then(function(categories) {
                 for(c in categories) {
                     displayCategory(categories[c]);
                 }
