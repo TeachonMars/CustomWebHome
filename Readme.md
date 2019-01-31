@@ -49,8 +49,8 @@ When opening the simulator, the first screen is an example of a custom web home 
 Other examples are available if you are looking for inspiration. You can find them in the _examples_ directory. To visualize them, you just need to change the URL in the _URL input_.
 
 Currently available examples:
-* Simple links to main screens: _../simple-links-cosmetics_
-* Root categories: _../categories-cosmetics_
+* Simple links to main screens: `../simple-links-cosmetics/`
+* Root categories: `../categories-cosmetics/`
 
 
 
