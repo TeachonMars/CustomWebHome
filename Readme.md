@@ -3,7 +3,7 @@
 If you have any question related to custom web home, or any other kind of integration with Teach on Mars, please consider joining the [Teach on Mars Integration slack community](https://join.slack.com/t/integration-on-mars/shared_invite/enQtNTQ1NjY5MDEzNjY2LTEyNjUxOGQzYjE3ZTVjYjU4ODhiOWNiZDEzMjBhMjUyODQ1MGE0OWZkM2I0OWY3OTQ3NWZiMTEzN2FmZmM0OTI).
 
 ## Introduction
-The Teach on Mars application is great out of the box, and its home screen may already be configured to suit your needs and graphical charter. But we thought some of you might like something more.
+The Teach on Mars application is great out of the box, and its design may already be configured to suit your needs and graphical charter. But we thought some of you might like something more.
 
 So here comes the Custom web home that allows you to create pretty much any kind of home screen as long as it is web based. This web home will be able to interact with the standard part of the application.
 
