@@ -24,6 +24,7 @@ window.trainingCourses = [
     ],
     "certified": false,
     "completed": false,
+    "points": 457,
     "cover": {
       "url": window.baseEnvUrl+"/assets/courses/training-course-1-750x545.jpg"
     },
@@ -45,6 +46,7 @@ window.trainingCourses = [
     ],
     "certified": false,
     "completed": false,
+    "points": 208,
     "cover": {
       "url": window.baseEnvUrl+"/assets/courses/training-course-2-750x545.jpg"
     },
@@ -66,6 +68,7 @@ window.trainingCourses = [
     ],
     "certified": false,
     "completed": false,
+    "points": 52,
     "cover": {
       "url": window.baseEnvUrl+"/assets/courses/training-course-3-750x545.jpg"
     },
