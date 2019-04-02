@@ -281,7 +281,7 @@ var TomInterface = function () {
       if (res && res.value !== undefined) {
         return res.value;
       } else {
-        return res;
+        return null;
       }
     }
   }, {
@@ -785,7 +785,7 @@ module.exports = {
 };
 
 function initScorm(scormEnabled) {
-  if (scormEnabled || window.iosInterface && window.iosInterface.scormEnabled || window.AndroidInterface && window.AndroidInterface.scormEnabled()) {
+  if (scormEnabled || window.webInterface && window.webInterface.scormEnabled || window.iosInterface && window.iosInterface.scormEnabled || window.AndroidInterface && window.AndroidInterface.scormEnabled()) {
     window.API = _scorm_adapter.ScormAPI12;
     window.API_1484_11 = _scorm_adapter.ScormAPI2004;
   }
@@ -1990,7 +1990,7 @@ var ScormAPI = function () {
             return env.get('LAST_NAME') + ", " + env.get('FIRST_NAME');
 
           case 'learnerLang':
-            return env.get('LANG');
+            return env.get('LANGUAGE');
 
           case 'totalTime':
             var totalTime = data.get('totalTime') || 0;
