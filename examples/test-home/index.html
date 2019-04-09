@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="commands">
+        <h2 class="section-title">Navigation</h2>
+        <div class="section-container">
+            <button class="test-data" data-method="ToM.navigation.displayWall">ToM.navigation.displayWall()</button>
+            <button class="test-data" data-method="ToM.navigation.displayCatalog">ToM.navigation.displayCatalog()</button>
+            <button class="test-data" data-method="ToM.navigation.displayProfile">ToM.navigation.displayProfile()</button>
+            <button class="test-data" data-method="ToM.navigation.displayApps">ToM.navigation.displayApps()</button>
+            <button class="test-data" data-method="ToM.navigation.displaySearch">ToM.navigation.displaySearch()</button>
+            <br />
+            <form class="data-args" method="get">
+                <input type="text" class="text-input" placeholder="search...">&rarr;
+                <button class="test-data with-args" data-method="ToM.navigation.displaySearch">ToM.navigation.displaySearch(...)</button>
+            </form>
+            <form class="data-args" method="get">
+                <input type="text" class="text-input" placeholder="trainingId">&rarr;
+                <button class="test-data with-args" data-method="ToM.navigation.displayTrainingCourse">ToM.navigation.displayTrainingCourse(...)</button>
+            </form>
+            <form class="data-args" method="get">
+                <input type="text" class="text-input" placeholder="communicationId">&rarr;
+                <button class="test-data with-args" data-method="ToM.navigation.displayCommunication">ToM.navigation.displayCommunication(...)</button>
+            </form>
+            <form class="data-args" method="get">
+                <input type="text" class="text-input" placeholder="categoryId">&rarr;
+                <button class="test-data with-args" data-method="ToM.navigation.displayCategory">ToM.navigation.displayCategory(...)</button>
+            </form>
+        </div>
+        <hr>
+        <h2 class="section-title">Data</h2>
+        <div class="section-container">
+            <button class="test-data" data-method="ToM.learner.getProfile" data-format-method="formatProfile">ToM.learner.getProfile()</button>
+            <button class="test-data" data-method="ToM.appContent.getTrainingCoursesForLearner" data-format-method="formatTrainingCourses">ToM.learner.getTrainingCoursesForLearner()</button>
+            <button class="test-data" data-method="ToM.appContent.getCategories" data-format-method="formatCategories">ToM.appContent.getCategories()</button>
+            <form class="data-args" method="get">
+                <input type="text" class="text-input" placeholder="categoryId" value="">&rarr;
+                <button class="test-data with-args" data-method="ToM.appContent.getCategory" data-format-method="formatCategory">ToM.appContent.getCategory()</button>
+            </form>
+            <button class="test-data" data-method="ToM.appContent.getFeaturedCommunications" data-format-method="formatFeaturedCommunications">ToM.appContent.getFeaturedCommunications()</button>
+            <button class="test-data" data-method="ToM.appContent.getCommunications">ToM.appContent.getCommunications()</button>
+            <form class="data-args" method="get">
+                <input type="text" class="text-input" placeholder="categoryId" value="">&rarr;
+                <button class="test-data with-args" data-method="ToM.appContent.getTrainingCoursesForCategory" data-format-method="formatTrainingCourses">ToM.appContent.getTrainingCoursesForCategory()</button>
+            </form>
+        </div>
+        <hr>
+        <h2 class="section-title">Utils</h2>
+        <div class="section-container">
+            <button class="test-data" data-method="ToM.appUtils.showTrainingCourseEnrollment">ToM.appUtils.showTrainingCourseEnrollment()</button>
+            <button class="test-data" data-method="ToM.appUtils.logout">ToM.appUtils.logout()</button>
+        </div>
+    </div>
+    <div>
+        <button id="reset" style="display:none;">Reset</button>
+    </div>
+    <hr>
+    <div id="format-result"></div>
+    <pre id="result"></pre>
+
+
+
+</body>
+</html>
