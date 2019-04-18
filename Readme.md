@@ -9,7 +9,7 @@ So here comes the Custom web home that allows you to create pretty much any kind
 
 This project will provide the tools you need to develop a custom web home and test it against dummy data without leaving your development environment.
 
-You will find more detailed information in the [Custom web home documentation](https://github.com/TeachonMars/CustomWebHome/raw/master/doc/ToM%20Custom%20Web%20Home%20v18.3.pdf).
+You will find more detailed information in the [Custom web home documentation](https://github.com/TeachonMars/CustomWebHome/raw/master/doc/ToM%20Custom%20Web%20Home%20v19.1.pdf).
 
 ## Walk through
 ### Requirements
