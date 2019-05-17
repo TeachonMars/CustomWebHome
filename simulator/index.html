@@ -7,6 +7,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lodash/core.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <script type="text/javascript" src="js/ToM-dummy.js"></script>
     <script type="text/javascript" src="js/ToM-interface.js"></script>
     <script type="text/javascript" src="js/ToM.min.js"></script>
@@ -15,17 +16,17 @@
 <div class="">
     <div class="collapsible">
         <form class="form-inline" style="background-color: #f5f5f5;border-bottom: 1px solid gray;">
-            <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group mt-2 mb-2 mr-sm-2">
                 <div class="input-group-prepend">
                     <div class="input-group-text">Home project URL</div>
                 </div>
                 <input class="form-control" type="text" id="content-url-input" size="60" />
             </div>
-            <input class="btn btn-primary mb-2" id="load-btn" type="submit" value="Load" />&nbsp;
+            <input class="btn btn-primary mt-2 mb-2" id="load-btn" type="submit" value="Load" />&nbsp;
         </form>
         <div style="font-style:italic;" id="content-url"></div>
     </div>
-    <div class="collapse-action"><button class="btn btn-link">toggle bar</button></div>
+    <div class="collapse-action"><button class="mt-2 btn btn-link"><i class="fas fa-chevron-circle-up"></i></button></div>
     <iframe
         src=""
         width="100%" height="500px" border="0" id="homeIframe"></iframe>
@@ -33,7 +34,10 @@
 </div>
 <script type="text/javascript">
     var contentUrl = "../examples/simple-links-cosmetics/";
-
+    var storedContentUrl = fetchStoredContentUrl();
+    if (storedContentUrl) {
+        contentUrl = storedContentUrl;
+    }
 
     $("#content-url-input").val(contentUrl);
     loadContent();
@@ -45,6 +49,31 @@
     function loadContent() {
         var src = $("#content-url-input").val();
         $("#homeIframe").attr("src", src);
+        rememberContentUrl(src);
+
+        setTimeout(function() {
+            $(".collapse-action button").click();
+        }, 1500);
+    }
+
+    function rememberContentUrl(src) {
+       cookievalue = btoa(src) + ";";
+       document.cookie = "contentUrl=" + cookievalue;
+    }
+
+    function fetchStoredContentUrl() {
+        // Get all the cookies pairs in an array
+        var cookiearray = document.cookie.split(';');
+        var contentUrl = null;
+        // Now take key value pair out of this array
+        for(var i=0; i<cookiearray.length; i++) {
+            name = cookiearray[i].split('=')[0];
+            value = cookiearray[i].split('=')[1];
+            if (name == "contentUrl") {
+                contentUrl = atob(value);
+            }
+        }
+        return contentUrl;
     }
 
     function closeContent() {
@@ -66,6 +95,7 @@
 
     $(".collapse-action button").click(function() {
         $(".collapsible").toggleClass("hidden");
+        $(this).find('i').toggleClass("fa-chevron-circle-up").toggleClass("fa-chevron-circle-down");
     })
 
 </script>
