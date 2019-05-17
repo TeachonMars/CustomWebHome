@@ -52,7 +52,7 @@
         rememberContentUrl(src);
 
         setTimeout(function() {
-            $(".collapse-action button").click();
+            closeToolbar();
         }, 1500);
     }
 
@@ -96,7 +96,12 @@
     $(".collapse-action button").click(function() {
         $(".collapsible").toggleClass("hidden");
         $(this).find('i').toggleClass("fa-chevron-circle-up").toggleClass("fa-chevron-circle-down");
-    })
+    });
+
+    function closeToolbar() {
+        $(".collapsible").addClass("hidden");
+        $(".collapse-action button i").removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
+    }
 
 </script>
 <style type="text/css">
