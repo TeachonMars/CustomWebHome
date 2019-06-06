@@ -25,7 +25,7 @@ window.trainingCourses = [
     "certified": false,
     "completed": false,
     "points": 457,
-    "cover": {
+    "coverImage": {
       "url": window.baseEnvUrl+"/assets/courses/training-course-1-750x545.jpg"
     },
     "demo": false,
@@ -33,7 +33,7 @@ window.trainingCourses = [
     "id": "training-course-1",
     "recommended": false,
     "sandbox": false,
-    "thumbnail": {
+    "thumbnailImage": {
       "url": null
     },
     "title": "Green banana",
@@ -47,7 +47,7 @@ window.trainingCourses = [
     "certified": false,
     "completed": false,
     "points": 208,
-    "cover": {
+    "coverImage": {
       "url": window.baseEnvUrl+"/assets/courses/training-course-2-750x545.jpg"
     },
     "demo": false,
@@ -55,7 +55,7 @@ window.trainingCourses = [
     "id": "training-course-2",
     "recommended": false,
     "sandbox": false,
-    "thumbnail": {
+    "thumbnailImage": {
       "url": null
     },
     "title": "Plant-based creams",
@@ -69,7 +69,7 @@ window.trainingCourses = [
     "certified": false,
     "completed": false,
     "points": 52,
-    "cover": {
+    "coverImage": {
       "url": window.baseEnvUrl+"/assets/courses/training-course-3-750x545.jpg"
     },
     "demo": false,
@@ -77,7 +77,7 @@ window.trainingCourses = [
     "id": "training-course-3",
     "recommended": false,
     "sandbox": false,
-    "thumbnail": {
+    "thumbnailImage": {
       "url": null
     },
     "title": "Anti-ageing creams",
