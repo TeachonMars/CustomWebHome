@@ -50,6 +50,9 @@
         var src = $("#content-url-input").val();
         $("#homeIframe").attr("src", src);
         rememberContentUrl(src);
+        setTimeout(function() {
+            SetIframeSize();
+        }, 400);
 
         setTimeout(function() {
             closeToolbar();
