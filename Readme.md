@@ -1,6 +1,6 @@
 # Custom web home
 ## Before you start
-If you have any question related to custom web home, or any other kind of integration with Teach on Mars, please consider joining the [Teach on Mars Integration slack community](https://join.slack.com/t/integration-on-mars/shared_invite/enQtNTc1NTQxODA3NTcwLTNiM2E3N2FhYjkzY2VjMmExYjRhOTkyNDhhZjNmNzQ5MzRiMzkwYzU5OWY3NjgxNmI3OWNlNjcyYjg1YWRjZmI).
+If you have any question related to custom web home, or any other kind of integration with Teach on Mars, please consider joining the [Teach on Mars Integration slack community](https://join.slack.com/t/integration-on-mars/shared_invite/enQtNTc1NTQxODA3NTcwLTFkY2FmMGU3NTEzZTU1NTI2NWIwN2M5MGNiZjUxZTkwM2I4MDZkNzZkNzM4MjMzMWQ1ZGUwZDRhZjAzNDRjMDE).
 
 ## Introduction
 The Teach on Mars application is great out of the box, and its design may already be configured to suit your needs and graphical charter. But we thought some of you might like something more.
